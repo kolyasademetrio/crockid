@@ -1948,3 +1948,104 @@ footer.footer {
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------->>> breadcrumbs End <<<------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> deliveryPayment <<<------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------- */
+.deliveryPayment__wrap {
+	padding: 0 0 calc(15px + 2.5vw);/*0 0 50px*/
+}
+
+.delivery,
+.payment {
+	margin: 0 calc(15px + 3.2142857142857144vw);/*0 60px*/
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #434343;
+}
+
+.delivery__item,
+.payment__item {
+	padding: calc(6px + 1.0714285714285714vw) 0 0 calc(30px + 5vw);/*21px 0 0 100px*/
+	position: relative;
+}
+
+.delivery__item:before,
+.payment__item:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(30px + 2.5vw);/*65px*/
+	height: calc(30px + 2.5vw);/*65px*/
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.delivery__item.courier:before {
+	background-image: url(../images/deliveryPayment/delivery-courier.png);
+}
+
+.delivery__item.pickup:before {
+	background-image: url(../images/deliveryPayment/delivery-pickup.png);
+}
+
+.delivery__item.post:before {
+	background-image: url(../images/deliveryPayment/delivery-post.png);
+}
+
+.payment__item.mode:before {
+	background-image: url(../images/deliveryPayment/payment-mode.png);
+}
+
+.deliveryPayment__itemP {
+	margin: 0 0 20px;
+}
+
+.bannerFullWidth__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	padding: calc(15px + 2.5vw) 0 calc(10px + 2.142857142857143vw);/*50px 0 40px*/
+}
+
+.bannerFullWidth__inner img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.attention {
+	color: #fc8000;
+}
+
+@media ( max-width: 650px ) {
+	.delivery,
+	.payment {
+		margin: 0;
+	}
+
+	.delivery,
+	.payment {
+		font-size: 14px !important;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> deliveryPayment End <<<-------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
