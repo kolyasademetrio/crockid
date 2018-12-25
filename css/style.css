@@ -2049,3 +2049,267 @@ footer.footer {
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------->>> deliveryPayment End <<<-------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> category <<<------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.sidebar__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.content {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+
+	padding: 0 0 calc(30px + 2.5vw);/*0 0 65px*/
+}
+
+.sidebar {
+	width: 200px;
+	margin: 0 calc(15px + 1.0714285714285714vw) 0 0;/*0 30px 0 0*/
+}
+
+.category__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	margin: 0 0 calc(20px + 3.5714285714285716vw);/*0 0 70px*/
+}
+
+.category__list>.goods__listItem {
+	-ms-flex-preferred-size: 22.75%;
+	flex-basis: 22.75%;
+	margin: 0 3% 3% 0;
+}
+
+.category__list>.goods__listItem:nth-child(4n) {
+	margin-right: 0;
+}
+
+.category__infoWrap {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #434343;
+}
+
+.category__infoWrap h1,
+.category__infoWrap h2,
+.category__infoWrap h3,
+.category__infoWrap h4,
+.category__infoWrap h5,
+.category__infoWrap h6 {
+	text-transform: uppercase;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> category End <<<--------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> pagination <<<----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.pagination {
+	display: inline-block;
+	padding: calc(20px + 2.142857142857143vw) 0;/*50px 0*/
+}
+.pagination > li {
+	display: inline-block;
+	margin-right: calc(10px + 0.7142857142857143vw);
+}
+.pagination > li.next a,
+.pagination > li.last a,
+.pagination > li.next span,
+.pagination > li.last span {
+	background-color: transparent;
+	color: #959595;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.pagination > li > a,
+.pagination > li > span {
+	font-family: "GothamProNarrowBold", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: calc(14px + 0.42857142857142855vw);/*20px*/
+	color: #fff;
+
+	position: relative;
+	float: left;
+	padding: 5px 13px 6px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	background-color: #959595;
+	border-radius: 3px;
+	margin-left: -1px;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	margin-left: 0;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	z-index: 2;
+	color: #fff;
+	background-color: #fc8000;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	z-index: 3;
+	color: #fff;
+	background-color: #fc8000;
+	cursor: default;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+	color: #777777;
+	background-color: #fff;
+	border-color: #ddd;
+	cursor: not-allowed;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> pagination End <<<------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> checkboxes <<<----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.form-group .checkbox {
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 5px;
+}
+
+.form-group .checkbox .checkbox-custom {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #e8e8e8;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	cursor: pointer;
+}
+
+.form-group .checkbox input[type="checkbox"] {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	margin: 0;
+	opacity: 0;
+}
+
+.form-group .checkbox input[type="checkbox"]:checked+.checkbox-custom:before {
+	content: '\2713';
+	display: inline-block;
+	position: relative;
+	top: -7px;
+}
+
+.form-group .checkbox label,
+.form-group .checkbox label a {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #676565;
+}
+
+.form-group .checkbox label {
+	padding: 2px 0 0 21px;
+	height: auto;
+	line-height: 2;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+
+@media ( max-width: 991px ) {
+	.form-group .checkbox .checkbox-custom {
+		-webkit-transform: scale(.65);
+		-moz-transform: scale(.65);
+		-ms-transform: scale(.65);
+		-o-transform: scale(.65);
+		transform: scale(.65);
+	}
+
+	.form-group .checkbox label,
+	.form-group .checkbox label a {
+		font-size: 15px;
+	}
+
+	.form-group .checkbox label {
+		padding-left: 45px;
+	}
+}
+
+@media ( max-width: 500px ) {
+	.form-checkboxes-group {
+		margin-bottom: 30px;
+	}
+
+	.form-group .checkbox {
+		margin-bottom: 20px;
+	}
+
+	.form-group .checkbox label {
+		line-height: 1.6;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> checkboxes End <<<------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> filters <<<-------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.filters__title,
+.filters__groupTitle {
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #676565;
+	text-transform: uppercase;
+	margin: 0 0 15px;
+}
+
+.filters__group {
+	margin: 0 0 30px;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> filters End <<<---------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
