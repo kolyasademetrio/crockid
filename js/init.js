@@ -79,4 +79,19 @@ jQuery(document).ready(function($){
     $(window).resize(function(){
         goodsSliderInit();
     });
+
+    if ( $(".filter__price").length ) {
+        $(".filter__price").slider({
+            'tooltip_split': false,
+            tooltip_position: 'bottom',
+            formatter: function formatter(val) {
+                if (Array.isArray(val)) {
+                    return '<div>' + val[0] + '</div><div>' + val[1] + '</div>';
+                } else {
+                    return val;
+                }
+            },
+        });
+    }
+
 });
