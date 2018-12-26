@@ -1,17 +1,25 @@
 jQuery(document).ready(function($){
 
-    $('.sliderMain').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        autoplay: false,
-        autoplaySpeed: 4000,
-        draggable: true,
-        fade: false,
-        prevArrow: '<div class="slick-prev slick-arrow"></div>',
-        nextArrow: '<div class="slick-next slick-arrow"></div>',
-    });
+    (function(){
+        var dots = $('.sliderMain').hasClass('dots') ? true : false;
+
+        console.log( dots );
+        
+        $('.sliderMain').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: dots,
+            arrows: true,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            draggable: true,
+            fade: false,
+            prevArrow: '<div class="slick-prev slick-arrow"></div>',
+            nextArrow: '<div class="slick-next slick-arrow"></div>',
+        });
+    })();
+
+
 
     $('.partners__list').owlCarousel({
         center: true,
@@ -80,44 +88,37 @@ jQuery(document).ready(function($){
         goodsSliderInit();
     });
 
-    /*if ( $(".filter__price").length ) {*/
-        /*$(".filter__price").slider({
-            'tooltip_split': false,
-            tooltip_position: 'bottom',
-            formatter: function formatter(val) {
-                if (Array.isArray(val)) {
-                    return '<div>' + val[0] + '</div><div>' + val[1] + '</div>';
-                } else {
-                    return val;
-                }
-            },
-        });*/
+    (function(){
+        var min = parseInt($( "#slider-range" ).attr("slider-min")),
+            max = parseInt($( "#slider-range" ).attr("slider-max"));
 
-        (function(){
-            var min = parseInt($( "#slider-range" ).attr("slider-min")),
-                max = parseInt($( "#slider-range" ).attr("slider-max"));
+        $( "#slider-range" ).slider({
+            range: true,
+            /*min: 0,
+             max: 500,
+             values: [ 75, 300 ],*/
+            min: min,
+            max: max,
+            values: [ min , max ],
+            slide: function( event, ui ) {
+            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
 
-            $( "#slider-range" ).slider({
-                range: true,
-                /*min: 0,
-                 max: 500,
-                 values: [ 75, 300 ],*/
-                min: min,
-                max: max,
-                values: [ min , max ],
-                slide: function( event, ui ) {
-                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            $("#slider__values>.first").text( ui.values[ 0 ] + ' ₸');
+            $("#slider__values>.second").text( ui.values[ 1 ] + ' ₸');
+        }
+    });
 
-                $("#slider__values>.first").text( ui.values[ 0 ] + ' ₸');
-                $("#slider__values>.second").text( ui.values[ 1 ] + ' ₸');
-            }
-        });
+        $("#slider__values>.first").text( $( "#slider-range" ).slider('values', 0 ) + ' ₸');
+        $("#slider__values>.second").text( $( "#slider-range" ).slider('values', 1 ) + ' ₸');
 
-            $("#slider__values>.first").text( $( "#slider-range" ).slider('values', 0 ) + ' ₸');
-            $("#slider__values>.second").text( $( "#slider-range" ).slider('values', 1 ) + ' ₸');
+    })();
 
-        })();
-
-
+    $('.video__link').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: true,
+    });
 
 });

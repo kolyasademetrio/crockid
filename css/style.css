@@ -3,7 +3,7 @@ Theme Name: MTA
 */
 
 body {
-	font-family: "ArimoRegular", sans-serif;
+	font-family: "GothamPro", sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -2035,6 +2035,10 @@ footer.footer {
 	color: #fc8000;
 }
 
+.uppercase {
+	text-transform: uppercase;
+}
+
 @media ( max-width: 650px ) {
 	.delivery,
 	.payment {
@@ -2628,4 +2632,238 @@ footer.footer {
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------->>> contacts End <<<--------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> about <<<---------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.slick-dots {
+	bottom: calc(20px + 1.237224314147391vw);/*43px*/
+}
+
+.slick-dots li {
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+}
+
+.slick-dots li.slick-active {
+	background-color: #fc8000;
+}
+
+.slick-dots li button {
+	display: none;
+}
+
+.about__text {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #434343;
+	padding: calc(20px + 2.3130715438407745vw) 0 calc(40px + 4.303388918773535vw);/*63px 0 120px*/
+
+	margin: 0 9.14470145239376vw 0;
+}
+
+.about__imagesList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+
+	margin: 0 2.6896180742334588vw;/*0 50px*/
+}
+
+.about__imagesListItem {
+	-ms-flex-preferred-size: 32%;
+	             flex-basis: 32%;
+	margin-right: 3%;
+}
+
+.about__imagesListItem:last-child {
+	margin-right: 0;
+}
+
+.about__img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+
+@media ( max-width: 750px ) {
+	.slick-dots {
+		bottom: 6px;
+	}
+}
+
+@media ( max-width: 400px ) {
+	.about__text {
+		padding: 20px 0;
+		margin: 0;
+	}
+
+	.about__imagesList {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+
+	.about__imagesListItem {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> about End <<<------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> video <<<---------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.video__wrap {
+	background-color: #323232;
+	padding: calc(10px + 0.914470145239376vw) 0;/*27px 0*/
+}
+
+.video__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+}
+
+.video__listItem {
+	padding: 0 calc(5px + 0.5379236148466918vw);/*0 15px*/
+}
+
+.video__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+
+	position: relative;
+	overflow: hidden;
+
+	margin: 0 0 calc(10px + 0.914470145239376vw);/*0 0 27px*/
+}
+
+.video__link:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX( -50% ) translateY( -50% );
+	    -ms-transform: translateX( -50% ) translateY( -50% );
+	        transform: translateX( -50% ) translateY( -50% );
+	width: calc(30px + 0.6455083378160301vw);
+	height: calc(30px + 0.6455083378160301vw);
+	background: url(../images/video/play.png) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	z-index: 2;
+}
+
+.video__link:hover .video__img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.video__img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+
+	-webkit-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
+}
+
+.mfp-container.mfp-iframe-holder .mfp-content {
+	width: 100% !important;
+	vertical-align: middle;
+}
+
+.mfp-bg {
+	background-color: #000;
+}
+
+.video__title {
+	text-align: center;
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: calc(12px + 0.4303388918773534vw);/*20px*/
+	color: #fff;
+}
+
+.video__exerpt {
+	text-align: center;
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: calc(8px + 0.4303388918773534vw);/*16px*/
+	color: #fff;
+}
+
+@media ( max-width: 767px ) {
+	.mfp-container.mfp-iframe-holder .mfp-content {
+		vertical-align: top;
+	}
+
+	.mfp-container.mfp-iframe-holder {
+		padding-top: 30px;
+	}
+}
+
+@media ( max-width: 650px ) {
+	.video__list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-box-align: center;
+		   -ms-flex-align: center;
+		      align-items: center;
+	}
+
+	.video__listItem {
+		margin-bottom: 25px;
+		
+		-ms-flex-preferred-size: 80%;
+		             flex-basis: 80%;
+	}
+
+	.video__title {
+		font-size: 16px;
+	}
+
+	.video__exerpt {
+		font-size: 15px;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> video End <<<------------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------- */
