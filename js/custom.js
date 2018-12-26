@@ -49,7 +49,33 @@ $(document).ready(function(){
 	/* ------------------------>>> Открыть / закрыть больше новостей End <<<-------------------------------- */
 
 
+	/* ------------------------>>> sidebar responsive <<<------------------------------------------------- */
+	function setSidebarResponsive(){
+		if ( $('.sidebar').length ) {
+			if ( $(window).width() > 780 ) {
+				$('.sidebar').removeClass('hidden responsive');
+			} else if ( $(window).width() <= 780 ) {
+				$('.sidebar').addClass('hidden responsive');
+			}
+		}
+	}
 
+	$(window).on('load', function(){
+		setSidebarResponsive();
+	});
+
+	$(window).resize( function(){
+		setSidebarResponsive();
+	});
+
+	$(document).on('click', '.category__showFilters', function(){
+		$('.sidebar').removeClass('hidden');
+	});
+
+	$(document).on('click', '.sidebar__close', function(){
+		$('.sidebar').addClass('hidden');
+	});
+	/* ------------------------>>> sidebar responsive End <<<------------------------------------------------- */
 
 
 

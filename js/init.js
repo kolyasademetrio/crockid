@@ -80,8 +80,8 @@ jQuery(document).ready(function($){
         goodsSliderInit();
     });
 
-    if ( $(".filter__price").length ) {
-        $(".filter__price").slider({
+    /*if ( $(".filter__price").length ) {*/
+        /*$(".filter__price").slider({
             'tooltip_split': false,
             tooltip_position: 'bottom',
             formatter: function formatter(val) {
@@ -91,7 +91,33 @@ jQuery(document).ready(function($){
                     return val;
                 }
             },
+        });*/
+
+        (function(){
+            var min = parseInt($( "#slider-range" ).attr("slider-min")),
+                max = parseInt($( "#slider-range" ).attr("slider-max"));
+
+            $( "#slider-range" ).slider({
+                range: true,
+                /*min: 0,
+                 max: 500,
+                 values: [ 75, 300 ],*/
+                min: min,
+                max: max,
+                values: [ min , max ],
+                slide: function( event, ui ) {
+                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+
+                $("#slider__values>.first").text( ui.values[ 0 ] + ' ₸');
+                $("#slider__values>.second").text( ui.values[ 1 ] + ' ₸');
+            }
         });
-    }
+
+            $("#slider__values>.first").text( $( "#slider-range" ).slider('values', 0 ) + ' ₸');
+            $("#slider__values>.second").text( $( "#slider-range" ).slider('values', 1 ) + ' ₸');
+
+        })();
+
+
 
 });

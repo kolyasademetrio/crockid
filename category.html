@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <!-- bootstrap-slider -->
     <link rel="stylesheet" href="plugins/bootstrap-slider/bootstrap-slider.css">
+    <!-- jquery-ui-slider -->
+    <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
     <!-- fonts css -->
     <link rel="stylesheet" href="css/fonts.css">
     <!-- custom css -->
@@ -486,6 +488,7 @@
                         <div class="section__title">Стульчики для кормления</div>
                         <div class="category sidebar__content">
                             <div class="sidebar">
+                                <div class="sidebar__close"></div>
                                 <div class="filters">
                                     <div class="filters__title">Фильтр</div>
                                     <div class="filters__group">
@@ -591,12 +594,35 @@
                                     <div class="filters__group">
                                         <div class="filters__groupTitle">Цена</div>
                                         <div class="form-group filter__priceWrap">
-                                            <input id="filter__price" type="text" class="filter__price" value="" data-slider-min="1140" data-slider-max="224500" data-slider-step="5" data-slider-value="[1140,224500]"/>
+                                            <div id="slider-range" slider-min="11140" slider-max="224500" svalue="1140"></div>
+                                            <div id="slider__values">
+                                                <div class="first"></div>
+                                                <div class="second"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="content">
+                                <div class="category__listFilters">
+                                    <div class="category__filter">
+                                        <label for="price">Сортировать по</label>
+                                        <select name="price" id="price">
+                                            <option value="">цене: сначала дешевые</option>
+                                            <option value="">цене: сначала дорогие</option>
+                                        </select>
+                                    </div>
+                                    <div class="category__filter">
+                                        <label for="qty">Всего 105 товаров. Показывать по</label>
+                                        <select name="qty" id="qty">
+                                            <option value="">20</option>
+                                            <option value="">12</option>
+                                            <option value="">8</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="category__showFilters"><span>Показать фильтры</span></div>
+                                </div>
                                 <ul class="category__list">
                                     <li class="goods__listItem">
                                         <a href="#" class="goods__link">
@@ -965,6 +991,8 @@
 <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 <!-- bootstrap-slider -->
 <script type="text/javascript" src="plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+<!-- jquery-ui-slider -->
+<script type="text/javascript" src="plugins/jquery-ui/jquery-ui.js"></script>
 <!-- custom js -->
 <script type="text/javascript" src="js/custom.js"></script>
 <!-- initializations -->
