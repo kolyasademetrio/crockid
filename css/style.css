@@ -2980,13 +2980,144 @@ footer.footer {
 		margin-left: 0;
 		margin-right: 0;
 	}
-
-
 }
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------->>> feedback End <<<--------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------- */
 
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> sizes <<<---------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.sizes__text {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #474343;
+	text-align: center;
+
+	margin: 0 0 calc(15px + 0.8068854222700377vw);/*30px*/
+}
+
+.tabs__wrap {
+	margin: 0 8.854166666666666vw calc(30px + 1.5625vw);/*0 170px 60px*/
+}
+
+.tabsTop__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+
+	margin: 0 0 30px;
+}
+
+.tabsTop__listItem {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #dbd8d8;
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 11px;
+	cursor: pointer;
+
+	-webkit-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+}
+
+.tabsTop__listItem.active,
+.tabsTop__listItem:hover {
+	background-color: #fc8000;
+}
+
+.tabsTop__listItem>span {
+	position: relative;
+	top: 2px;
+}
+
+.tabsBottom__title {
+	font-family: "GothamProLight", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #474343;
+	text-align: center;
+
+	margin: 0 0 20px;
+}
+
+.tabsBottom__content>table {
+	width: 100%;
+}
+
+.tabsBottom__content>table,
+.tabsBottom__content>table th,
+.tabsBottom__content>table td {
+	border: 1px solid #dbd8d8;
+}
+
+.tabsBottom__content>table th,
+.tabsBottom__content>table td {
+	padding: calc(10px + 0.3125vw) calc(10px + 0.7291666666666666vw) calc(8px + 0.2604166666666667vw);/*16px 24px 13px*/
+	font-size: calc(15px + 0.15625vw);/*18px*/
+	color: #474343;
+}
+
+.tabsBottom__content>table td {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.tabsBottom__content>table th,
+.tabsBottom__content>table tr:first-child td {
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.tabsBottom__content>table th:not(:first-child),
+.tabsBottom__content>table td:not(:first-child) {
+	text-align: center;
+}
+
+@media ( max-width: 992px ) {
+	.tabs__wrap {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+@media ( max-width: 750px ) {
+	.tabsBottom__content {
+		overflow-x: auto;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> sizes End <<<------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------- */
 
 
 

@@ -79,6 +79,28 @@ $(document).ready(function(){
 
 
 
+	/*--------------------------------- функция для вкладок -----------------------------*/
+
+	function getTabs(tabsClass, sectionsClass, classActive){
+		var $tabs = $('.' + tabsClass),
+			$sections = $('.' + sectionsClass);
+
+		$sections.not(':first').addClass('hide');
+
+		$tabs.click(function(){
+			$tabs.removeClass(classActive).eq($(this).index()).addClass(classActive);
+			$sections.addClass('hide').eq($(this).index()).removeClass('hide');
+		}).first().addClass(classActive);
+	}
+
+	/* вызов функции вкладок */
+
+	if ( $(window).width() > 0 ) {
+
+		getTabs('tabsTop__listItem', 'tabsBottom__listItem', 'active');
+
+	}
+	/*--------------------------------- функция для вкладок End -------------------------*/
 
 
 
@@ -110,27 +132,6 @@ $(document).ready(function(){
 		// ancor($('#ourContacts'), $('.ourContacts'));
 	
 	/*--------------------------------- функция для якоря Конец -------------------------*/
-
-
-
-	/*--------------------------------- функция для вкладок -----------------------------*/
-
-		function getTabs(tabsClass, sectionsClass, classActive){
-			var $tabs = $('.' + tabsClass),
-				$sections = $('.' + sectionsClass);
-
-			$sections.not(':first').addClass('choice__posAbs');
-
-			$tabs.click(function(){
-				$tabs.removeClass(classActive).eq($(this).index()).addClass(classActive);
-				$sections.addClass('choice__posAbs').eq($(this).index()).removeClass('choice__posAbs');
-			}).eq(0).addClass(classActive);
-		}
-		
-		/* вызов функции вкладок */
-		// getTabs('choice__tab', 'choice__slider', 'active');
-	
-	/*--------------------------------- функция для вкладок End -------------------------*/
 
 
 
