@@ -3121,6 +3121,65 @@ footer.footer {
 
 
 
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> goodSingle <<<----------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.goodSingle {
+	margin: 0 2.6896180742334588vw;/*0 50px*/
+}
+
+.goodSingle__header,
+.goodSingle__footer {
+	border: 1px solid #e8e8e8;
+	padding: calc(20px + 0.914470145239376vw) calc(25px + 1.6137708445400754vw) calc(23px + 0.914470145239376vw);/*37px 55px 40px*/
+	margin-bottom: 43px;
+}
+
+.goodSingle__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+}
+
+.goodSingle__headerItem {
+	-ms-flex-preferred-size: 50%;
+	             flex-basis: 50%;
+}
+
+
+
+
+.goodSingle__center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+}
+
+.goodSingle__centerItem {
+	-ms-flex-preferred-size: 50%;
+	             flex-basis: 50%;
+}
+
+
+
+
+.goodSingle__footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+}
+
+.goodSingle__footerItem {
+	-ms-flex-preferred-size: 50%;
+	             flex-basis: 50%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> goodSingle End <<<------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
 
 
 

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- flexslider -->
+    <link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css"/>
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="plugins/slick-slider/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="plugins/slick-slider/slick-theme.css" type="text/css"/>
+    <!-- owl-carousel -->
+    <link rel='stylesheet' href='plugins/owl-carousel/owl.carousel.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='plugins/owl-carousel/owl.theme.default.css' type='text/css' media='all' />
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <!-- bootstrap-slider -->
+    <link rel="stylesheet" href="plugins/bootstrap-slider/bootstrap-slider.css">
+    <!-- fonts css -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="wrapper__main">
+    <div class="content__main">
+        <header class="header">
+            <div class="header__top">
+                <div class="containerCenter">
+                    <div class="headerTop__inner">
+                        <div class="headerTop__item">
+                            <a href="#" class="headerTop__link city"><span>Алматы</span></a>
+                            <a href="#" class="headerTop__link delivery"><span>Доставка</span></a>
+                            <a href="#" class="headerTop__link store"><span>Адреса магазинов</span></a>
+                        </div>
+
+                        <div class="headerTop__item">
+                            <a href="#" class="headerTop__link user"><span>Профиль</span></a>
+                            <a href="#" class="headerTop__link favorite"><span>Избранное</span></a>
+                            <a href="#" class="headerTop__link cart"><span>Корзина</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="containerCenter">
+                    <div class="headerBottom__inner">
+                        <div class="headerBottom__logoWrap">
+                            <a href="#" class="headerBottom__logoLink">
+                                <img src="images/header/logo-crockid.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="headerBottom__searchWrap">
+                            <form action="">
+                                <div class="headerBottom__searchInner">
+                                    <input type="text" placeholder="Поиск по каталогу товаров" class="headerBottom__searchField">
+                                    <button type="submit" class="headerBottom__submitField"></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="headerBottom__phoneWrap">
+                            <a href="tel:+77029259091" class="headerBottom__phoneLink">
+                                <span class="headerBottom__phoneNumber">+7 702 925-90-91</span>
+                                <span class="headerBottom__phoneText">мы перезвоним</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main" class="site__main">
+            <!-- menu -->
+            <div class="menu__wrap">
+                <div class="containerCenter">
+                    <div class="menu__inner">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link clothes">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Одежда</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Верхняя одежда</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Комплекты</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Топы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Футболки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Слипы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Боди</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Платья</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Юбки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Колготки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Пижамы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Нижнее белье</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Штаны</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Шорты</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Аксессуары</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-6.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link shoes">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Обувь</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Балетки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Ботинки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Босоножки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Кеды</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Кроссовки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Мокасины</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Туфли</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Сапоги</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Сандали</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Сланцы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Пляжная обувь</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Школьная обувь</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-7.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link carseat">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Автокресла</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Автокресла 0+ (0-18 кг)</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Автокресла 1 (9-18 кг)</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Автокресла 1-2-3 (9-36 кг)</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Автокресла 2-3 (15-36 кг)</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Базы для автокресел</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Аксессуары</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-5.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link stroller">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Коляски</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Коляски 2 в 1</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Коляски 3 в 1</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Коляски трости</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Прогулочные коляски</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Аксессуары</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-4.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link stroller2">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Велосипеды<br> и самокаты</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Велосипеды</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Самокаты</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-3.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link chairs">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Стульчики<br> и качели</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Cтульчики</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Качели</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Шезлонги</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-2.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link feeding">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Кормление</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Бутылочки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Соски для бутылочек</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Пустышки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Стерилизаторы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Подогреватели</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Блендеры</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Молокоотсосы</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Прорезыватели</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Посуда</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Аксессуары</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-1.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link bath">
+                                    <span class="menu__iconWrap"><span class="menu__icon"></span></span>
+                                    <span class="menu__itemTitle">Купание<br> и гигиена</span>
+                                </a>
+                                <div class="submenuWrap">
+                                    <div class="submenuWrapInner">
+                                        <ul class="submenu">
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Ванночки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Подставки под ванночки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Круги для плавания</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Горшки</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Адаптеры на унитаз</a></li>
+                                            <li class="submenu__item"><a href="#" class="submenu__link">Подставка ступенька</a></li>
+                                        </ul>
+                                        <div class="submenu__goodWrap">
+                                            <div class="submenu__goodTitle">Хит продаж</div>
+                                            <div class="submenu__good">
+                                                <div class="goods__listItem">
+                                                    <a href="#" class="goods__link">
+                                                        <span class="goods__header">
+                                                            <span class="goods__labels">
+                                                                <span class="goods__new good__label">Новинка</span>
+                                                                <span class="goods__sale good__label">Скидка</span>
+                                                            </span>
+                                                            <img src="images/goods/good-11.png" alt="" class="goods__img">
+                                                        </span>
+                                                        <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                            <span class="goods__footer">
+                                                            <span class="goods__price">
+                                                                <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                                <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                            </span>
+                                                            <span class="goods__icons">
+                                                                <span class="goods__cart"></span>
+                                                                <span class="goods__fav"></span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- menu End -->
+
+            <!-- breadcrumbs -->
+            <div class="breadcrumbs__wrap">
+                <div class="containerCenter">
+                    <div class="breadcrumbs__inner">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Стульчики для кормления</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+            <!-- breadcrumbs End -->
+
+            <div class="goodSingle__wrap">
+                <div class="containerCenter">
+                    <div class="goodSingle__inner">
+                        <div class="section__title">Стульчики для кормления</div>
+                        <div class="goodSingle">
+                            <div class="goodSingle__header">
+                                <div class="goodSingle__headerItem">
+                                    <div class="goodSingle__gallery">
+                                        .goodSingle__
+                                    </div>
+                                </div>
+                                <div class="goodSingle__headerItem">
+                                    <div class="goodSingle__headerInfo">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goodSingle__center">
+                                <div class="goodSingle__centerItem">
+
+                                </div>
+                                <div class="goodSingle__centerItem">
+
+                                </div>
+                            </div>
+                            <div class="goodSingle__footer">
+                                <div class="goodSingle__footerItem">
+
+                                </div>
+                                <div class="goodSingle__footerItem">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- goodRelated -->
+            <div class="goodRelated__wrap">
+                <div class="containerCenter">
+                    <div class="goodRelated__inner">
+                        <div class="section__title">Похожие товары</div>
+                        <div class="goodRelated">
+                            <div class="goods__listWrap">
+                                <ul class="goods__list owl-carousel">
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-1.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-2.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-3.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-4.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-5.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                    <li class="goods__listItem">
+                                        <a href="#" class="goods__link">
+                                                <span class="goods__header">
+                                                    <span class="goods__labels">
+                                                        <span class="goods__new good__label">Новинка</span>
+                                                        <span class="goods__sale good__label">Скидка</span>
+                                                    </span>
+                                                    <img src="images/goods/good-1.png" alt="" class="goods__img">
+                                                </span>
+                                            <span class="goods__title">Ботинки утепленные<br> Pablosky</span>
+                                                <span class="goods__footer">
+                                                    <span class="goods__price">
+                                                        <span class="goods__salePrice"><span class="crossed">16 990</span> ₸</span>
+                                                        <span class="goods__mainCurrentPrice">26 990 ₸</span>
+                                                    </span>
+                                                    <span class="goods__icons">
+                                                        <span class="goods__cart"></span>
+                                                        <span class="goods__fav active"></span>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- goodRelated End -->
+
+        </div><!-- site__main -->
+    </div><!-- content__main -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="containerCenter">
+                <div class="footerTop__inner">
+                    <div class="footerTop__menuWrap">
+                        <div class="footerTop__menuItem">
+                            <div class="footerTop__menuTitle">Магазины сrockid</div>
+                            <ul class="footerTop__menuList">
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">О компании</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Наши бренды</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Дисконтные карты</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Вакансии</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Подарочные<br> сертификаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footerTop__menuItem">
+                            <div class="footerTop__menuTitle">Интернет-магазин Crockid</div>
+                            <ul class="footerTop__menuList">
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Доставка и оплата</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Возврат</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Таблицы размеров</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Отзывы покупателей</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Частые вопросы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footerTop__menuItem">
+                            <div class="footerTop__menuTitle">Информация</div>
+                            <ul class="footerTop__menuList">
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Оферта</a>
+                                </li>
+                                <li class="footerTop__menuListItem">
+                                    <a href="#" class="footerTop__menuLink">Политика<br> конфиденциальности</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footerTop__widgetWrap">
+                        <div class="footerTop__widgetInner">Место для Виджета</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="containerCenter">
+                <div class="footerBottom__inner">
+                    <div class="footerBottom__socialsWrap">
+                        <div class="footerBottom__socialTitle">Следите за нами</div>
+                        <ul class="socials__list">
+                            <li><a href="#" class="fb"></a></li>
+                            <li><a href="#" class="vk"></a></li>
+                            <li><a href="#" class="inst"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerBottom__copyrightWrap">
+                        <div class="footerBottom__copyright">© СROCKID 2018 Все права защищены</div>
+                    </div>
+
+                    <div class="footerBottom__developmentWrap">
+                        <div class="footerBottom__development">
+                            <span>Разработка сайта</span><a href="#"><img src="images/footer/logo_puzzle.png" alt="Puzzle"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div><!-- wrapper__main -->
+
+
+
+
+
+
+<!--          *****************   javascript   ***************                    -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<!-- bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- flexslider JS -->
+<script type="text/javascript" src="plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- slick-slider JS -->
+<script type="text/javascript" src="plugins/slick-slider/slick.js"></script>
+<!-- owl-carousel -->
+<script type='text/javascript' src='plugins/owl-carousel/owl.carousel.min.js.js'></script>
+<!-- popup JS -->
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- bootstrap-slider -->
+<script type="text/javascript" src="plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- initializations -->
+<script type="text/javascript" src="js/init.js"></script>
+
+</body>
+</html>
