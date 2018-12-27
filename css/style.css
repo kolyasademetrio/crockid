@@ -2867,3 +2867,166 @@ footer.footer {
 /* ---------------------------------------------------------------------------------------------------- */
 /* ----------------------------->>> video End <<<------------------------------------------------------ */
 /* ---------------------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> feedback <<<------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+.feedback {
+	padding: 0 0 6.993006993006993vw;/*0 0 130px*/
+}
+
+.feedback__formWrap {
+	margin: 0 12.641204948897256vw calc(20px + 0.9682625067240452vw);/*0 235px 38px*/
+}
+
+.feedback__formItem {
+	position: relative;
+	margin: 0 0 13px;
+}
+
+.feedback__inputText {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #909090;
+
+	width: 100%;
+	height: 36px;
+	border: 0 none;
+	border-radius: 18px;
+	background-color: #ececec;
+	padding: calc(6px + 0.35714285714285715vw) calc(47px + 0.35714285714285715vw) calc(5px + 0.35714285714285715vw) calc(19px + 0.35714285714285715vw);/*11px 24px 10px*/
+}
+
+.feedback__inputText:focus {
+	background-color: #ffe09e;
+}
+
+.feedback__inputText::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #909090;
+}
+.feedback__inputText::-moz-placeholder {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #909090;
+}
+.feedback__inputText:-ms-input-placeholder {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #909090;
+}
+.feedback__inputText:-moz-placeholder {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #909090;
+}
+
+.feedback__inputSubmit {
+	background: #e17f00 url(../images/mail-form-feedback.png) no-repeat center center;
+	border-radius: 18px;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.feedback__listWrap {
+	margin: 0 9.14470145239376vw;/*0 170px*/
+}
+
+.feedback__listItem {
+	margin: 0 0 25px;
+}
+
+.feedback__username {
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #fc8000;
+}
+
+.feedback__comment {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #434343;
+}
+
+@media ( max-width: 767px ) {
+	.feedback__formWrap,
+	.feedback__listWrap {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* ----------------------------->>> feedback End <<<--------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
