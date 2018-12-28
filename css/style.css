@@ -69,7 +69,7 @@ input:focus {
 
 .mfp-content {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: auto !important;
 	-webkit-box-shadow: 0px 0px 8.73px 0.27px rgba(86, 86, 87, 0.44);
 	-moz-box-shadow: 0px 0px 8.73px 0.27px rgba(86, 86, 87, 0.44);
@@ -87,6 +87,13 @@ input:focus {
 	margin: 0 !important;
 	top: 0;
 	right: 0;
+}
+
+.mfp-container.mfp-image-holder .mfp-content {
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 /* common styles for magnific popup End */
 
@@ -1560,7 +1567,8 @@ footer.footer {
 	color: #fff;
 	line-height: 21px;
 	border-radius: 4px;
-	padding: 0 10px;
+	padding: 2px 10px 0;
+	text-transform: uppercase;
 }
 
 .goods__sale {
@@ -1649,7 +1657,7 @@ footer.footer {
 	color: #353535;
 	text-transform: uppercase;
 	border-radius: 3px;
-	padding: 8px calc(15px + 1.2857142857142858vw) 9px;
+	padding: 11px calc(15px + 1.2857142857142858vw) 9px;
 	background-color: #fff;
 
 	margin-right: 10px;
@@ -3142,12 +3150,264 @@ footer.footer {
 }
 
 .goodSingle__headerItem {
-	-ms-flex-preferred-size: 50%;
-	             flex-basis: 50%;
+	width: 50%;
 }
 
+.goodSingle__gallery {
+	position: relative;
+	padding-left: 94px;
+	padding-top: 30px;
+}
 
+.goodSingle__slider {
+	width: 100%;
+}
 
+.goodSingle__sliderItem  {
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	       display: flex !important;
+}
+
+.goodSingle__sliderLink {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+}
+
+.goodSingle__sliderImage {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.goodSingle__sliderNav {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	bottom: 30px;
+	width: 94px;
+}
+
+.goodSingle__sliderNavItem {
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	min-height: 120px;
+	display: -webkit-box !important;
+	display: -ms-flexbox !important;
+	       display: flex !important;
+
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+}
+
+.slick-slide img.goodSingle__sliderNavImage {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+.goodPrev.slick-arrow,
+.goodNext.slick-arrow {
+	background-image: url(../images/sliderMain/right-arrow.png);
+	position: absolute;
+	width: 30px;
+	height: 27px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 10;
+	outline: none;
+	cursor: pointer;
+	margin: 0;
+	left: 32px;
+}
+
+.goodPrev.slick-arrow {
+	top: -18px;
+	bottom: auto;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.goodNext.slick-arrow {
+	bottom: 0;
+	top: auto;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.goodSingle__headerInfo {
+	margin: 0 0 0 45px;/*0 0 0 46px*/
+}
+
+.goodSingle__headerInfo {
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #000;
+}
+
+.goodSingle__headerInfo>div {
+	margin: 0 0 18px;
+}
+
+.goodSingle__headerInfoCode {
+
+}
+
+.goodSingle__headerInfoTitle {
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.goodSingle__headerInfoAdd {
+	font-size: 18px;
+}
+
+.goodSingle__headerInfoAdd>div {
+	display: inline-block;
+	margin-right: 19px;
+}
+
+.goodSingle__headerInfoWeight:before {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 24px;
+	height: 20px;
+	background: url(../images/goodSingle/weight.png) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	margin-right: 9px;
+}
+
+.goodSingle__headerInfoAdd>div:last-child {
+	margin-right: 0;
+}
+
+.goodSingle__headerInfoPrice {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.goodSingle__headerInfo .good__label {
+	margin-left: auto;
+}
+
+.goodSingle__headerInfoSalePrice {
+	font-family: "GothamProNarrowBold", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #959595;
+	text-decoration: line-through;
+	margin-right: 15px;
+	vertical-align: baseline;
+}
+
+.goodSingle__headerInfoCurrentPrice {
+	font-family: "GothamProNarrowBold", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 24px;
+	color: #fc8000;
+	vertical-align: baseline;
+}
+
+.goodSingle__headerInfoSize {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.goodSingle__headerInfoPriceSelect {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0 none;
+	cursor: pointer;
+	font-family: "GothamPro", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+	color: #919191;
+	background: #ededed url(../images/select-arrow-grey.png) 84% 50% no-repeat;
+	padding: 8px 30% 8px 22px;
+	outline: none !important;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+}
+
+.goodSingle__headerInfoPriceSelect>option {
+	padding: 3px;
+}
+
+.goodSingle__headerInfoLink {
+	font-family: "GothamProMedium", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: #fc8000;
+}
+
+.goodSingle__headerInfoLinksHeader .goodSingle__headerInfoLink:not(:first-child):before {
+	content: '•';
+	display: inline-block;
+	padding: 0 14px 0 10px;
+	color: #fc8000;
+}
+
+.goodSingle__headerInfoDescr {
+	color: #434343;
+}
+
+.goodSingle__headerInfoBtns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	       display: flex;
+
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
 
 .goodSingle__center {
 	display: -webkit-box;

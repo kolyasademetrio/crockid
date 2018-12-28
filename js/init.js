@@ -3,8 +3,6 @@ jQuery(document).ready(function($){
     (function(){
         var dots = $('.sliderMain').hasClass('dots') ? true : false;
 
-        console.log( dots );
-        
         $('.sliderMain').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -123,5 +121,71 @@ jQuery(document).ready(function($){
         preloader: false,
         fixedContentPos: true,
     });
+
+    (function(){
+
+        /* -------------- Slick Slider on content-single-product.php ------------------- */
+        $('.goodSingle__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: false
+        });
+
+        function goodGallerySliderNavInit( vertical, centerMode, slidesToShow ){
+            $('.goodSingle__sliderNav').slick({
+                slidesToShow: slidesToShow,
+                slidesToScroll: 1,
+                asNavFor: '.goodSingle__slider',
+                dots: false,
+                centerMode: centerMode,
+                focusOnSelect: true,
+                vertical: vertical,
+                arrows: true,
+                centerPadding: '0px',
+                nextArrow: $('.goodNext'),
+                prevArrow: $('.goodPrev'),
+            });
+        }
+
+        if ( $(window).width() > 600 ) {
+            goodGallerySliderNavInit( true, false, 2 );
+        } else {
+            var gallerySliderItemNav = $('.goodSingle__sliderNavItem'),
+                gallerySliderItemNavLength = gallerySliderItemNav.length;
+
+            if ( gallerySliderItemNavLength > 1 ) {
+                goodGallerySliderNavInit( false, true, gallerySliderItemNavLength -1 );
+            }
+        }
+
+        $('.goodSingle__sliderLink').magnificPopup({
+            type:'image',
+            removalDelay: 500,
+            mainClass: 'mfp-fade',
+            showCloseBtn: true,
+            closeMarkup: '<div class="mfp-close">×</div>',
+            closeBtnInside: true,
+            closeOnContentClick: false,
+            closeOnBgClick: true,
+            alignTop: false,
+            fixedContentPos: true,
+            callbacks: {
+                open: function() {
+                },
+                close: function() {
+
+                },
+                beforeOpen: function() {
+                    var $triggerEl = $(this.st.el),
+                        newClass = 'goodSingle__popup';
+                    this.st.mainClass = this.st.mainClass + ' ' + newClass;
+                }
+            }
+        });
+
+
+    })();
 
 });
