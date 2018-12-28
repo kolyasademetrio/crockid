@@ -156,7 +156,7 @@ jQuery(document).ready(function($){
                 gallerySliderItemNavLength = gallerySliderItemNav.length;
 
             if ( gallerySliderItemNavLength > 1 ) {
-                goodGallerySliderNavInit( false, true, gallerySliderItemNavLength -1 );
+                goodGallerySliderNavInit( false, true, gallerySliderItemNavLength );
             }
         }
 

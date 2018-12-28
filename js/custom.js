@@ -105,7 +105,29 @@ $(document).ready(function(){
 
 
 
+	/* ------------------------>>> click on .goodSingle__footerExpandableMoreBtn <<<-------------------------- */
+    $(document).on('click', '.goodSingle__footerExpandableMoreBtn', function(){
+        var textShow = $(this).attr('data-text-show'),
+            textHide = $(this).attr('data-text-hide'),
+            $that = $(this),
+			$wrapper = $('.goodSingle__footerExpandableWrap'),
+			$inner = $('.goodSingle__footerExpandableContent');
 
+        if ( $wrapper.hasClass('active') ) {
+            $wrapper.removeClass('active');
+            $that.text( textShow );
+            $inner.css({
+                'height': '',
+            });
+        } else {
+            $wrapper.addClass('active');
+            $that.text( textHide );
+            $inner.css({
+                'height': $('.goodSingle__footerExpandableList').outerHeight(),
+            });
+        }
+    });
+	/* ------------------------>>> click on .goodSingle__footerExpandableMoreBtn End <<<---------------------- */
 
 
 
@@ -134,103 +156,5 @@ $(document).ready(function(){
 	/*--------------------------------- функция для якоря Конец -------------------------*/
 
 
-
-	/*--------------------------------- функция для карусели -------------------------*/
-
-		function getCarousel(list, element, arrowRight, arrowLeft) {
-			var $list = $('.' + list),
-				$element = $('.' + element),
-				$arrowRight = $('.' + arrowRight),
-				$arrowLeft = $('.' + arrowLeft),
-				$carouselSimple__wrap = $('.carouselSimple__wrap'),
-				elemWidth = $carouselSimple__wrap.outerWidth(true);
-
-			$element.width(elemWidth);
-			$list.css({'left' : -elemWidth}).prepend($element.last());
-
-			$(window).resize(function(){
-
-				var $list = $('.' + list),
-					$element = $('.' + element),
-					$arrowRight = $('.' + arrowRight),
-					$arrowLeft = $('.' + arrowLeft),
-					$carouselSimple__wrap = $('.carouselSimple__wrap'),
-					elemWidth = $carouselSimple__wrap.outerWidth(true);
-
-				$element.width(elemWidth);
-				$list.css({'left' : -elemWidth});
-
-			});
-
-			function nextSlide() {
-				$list.animate({'margin-left' : -elemWidth}, 500, function(){
-					$('.' + element).first().appendTo($list);
-					$list.css({'margin-left' : 0});
-				});
-			}
-
-			function prevSlide() {
-				$list.animate({'margin-left' : elemWidth}, 500, function(){
-					$('.' + element).last().prependTo($list);
-					$list.css({'margin-left' : 0});
-				});
-			}
-
-			$arrowRight.click(function(){
-				nextSlide();
-			});
-
-			$arrowLeft.click(function(){
-				prevSlide();
-			});
-		}
-
-		/* вызов функции для карусели carouselSimple */
-		// getCarousel('carouselSimple__list_1', 'carouselSimple__item_1', 'carouselSimple__arrowRight_1', 'carouselSimple__arrowLeft_1');
-		// getCarousel('carouselSimple__list_2', 'carouselSimple__item_2', 'carouselSimple__arrowRight_2', 'carouselSimple__arrowLeft_2');
-		// getCarousel('carouselSimple__list_3', 'carouselSimple__item_3', 'carouselSimple__arrowRight_3', 'carouselSimple__arrowLeft_3');
-
-	/*--------------------------------- функция для карусели End -------------------------*/
-
-
-	/*--------------------------------- функция для выравнивания высоты колонок -------------------------*/
-
-		function setMaxHeight(elem) {
-		    var $elem = $('.' + elem),
-		        arrAllHeight = [],
-		        maxHeight;
-		    
-		    $elem.each(function(){
-		      arrAllHeight.push($(this).height());
-		    });
-		    
-		    maxHeight = Math.max.apply(null, arrAllHeight);
-		    
-		    $elem.height(maxHeight);
-		}
-
-
-		/* вызов функции для выравнивания высоты колонок */
-		// if (window.matchMedia('only screen and (max-width : 992px)').matches) {
-
-		// 	setMaxHeight('itemQuestion');
-		// 	setMaxHeight('itemAnswer');
-
-		// }
-
-		// $(window).resize(function(){
-
-		// 		if ( window.matchMedia('only screen and (max-width : 992px)').matches ) {
-
-		// 			setMaxHeight('itemQuestion');
-		// 	  		setMaxHeight('itemAnswer');
-
-		// 		}
-
-		// });
-
-		// setMaxHeight('serviceFooter');
-	
-	/*--------------------------------- функция для выравнивания высоты колонок End -------------------------*/	  
 
 });
