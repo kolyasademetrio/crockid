@@ -131,7 +131,37 @@ $(document).ready(function(){
 
 
 
+	/* ------------------------>>> setStickyHeader <<<------------------------------------------------- */
+    (function(){
+        if ( $("header.header").length ) {
+            var $header = $("header.header");
 
+            function setStickyHeader() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll > 0) {
+                    $header.addClass('sticky');
+                    $header.css({
+						'padding-top': $('.header__top').outerHeight(),
+					});
+                } else {
+                    $header.removeClass('sticky');
+                    $header.css({
+                        'padding-top': '',
+                    });
+                }
+            }
+
+            $(window).on('load', function(){
+				setStickyHeader();
+            });
+
+            $(window).on('scroll', function(){
+				setStickyHeader();
+            });
+        }
+    })();
+	/* ------------------------>>> setStickyHeader End <<<--------------------------------------------- */
 
 
 

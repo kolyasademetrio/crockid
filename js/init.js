@@ -152,12 +152,7 @@ jQuery(document).ready(function($){
         if ( $(window).width() > 600 ) {
             goodGallerySliderNavInit( true, false, 2 );
         } else {
-            var gallerySliderItemNav = $('.goodSingle__sliderNavItem'),
-                gallerySliderItemNavLength = gallerySliderItemNav.length;
-
-            if ( gallerySliderItemNavLength > 1 ) {
-                goodGallerySliderNavInit( false, true, gallerySliderItemNavLength );
-            }
+            goodGallerySliderNavInit( false, true, 2 );
         }
 
         $('.goodSingle__sliderLink').magnificPopup({
