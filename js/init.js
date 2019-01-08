@@ -1,5 +1,10 @@
 jQuery(document).ready(function($){
 
+
+    $(".goodSingle__headerInfoPriceSelect").styler({
+
+    });
+
     (function(){
         var dots = $('.sliderMain').hasClass('dots') ? true : false;
 
@@ -8,7 +13,7 @@ jQuery(document).ready(function($){
             slidesToScroll: 1,
             dots: dots,
             arrows: true,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 4000,
             draggable: true,
             fade: false,
@@ -17,13 +22,28 @@ jQuery(document).ready(function($){
         });
     })();
 
+    if ( $(window).width() <= 767 && $('.bannersInside').length ) {
+        $('.bannersInside').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            draggable: true,
+            fade: false,
+            prevArrow: '<div class="slick-prev slick-arrow"></div>',
+            nextArrow: '<div class="slick-next slick-arrow"></div>',
+        });
+    }
+
 
 
     $('.partners__list').owlCarousel({
         center: true,
         loop: true,
         items: 7,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout:3000,
         nav: true,
         dots: false,
@@ -68,7 +88,7 @@ jQuery(document).ready(function($){
             center: false,
             loop: true,
             items: slideToShow,
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout:3000,
             nav: true,
             dots: false,

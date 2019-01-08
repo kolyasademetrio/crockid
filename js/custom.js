@@ -54,8 +54,10 @@ $(document).ready(function(){
 		if ( $('.sidebar').length ) {
 			if ( $(window).width() > 780 ) {
 				$('.sidebar').removeClass('hidden responsive');
+				$('.category__showFilters').addClass('hidden');
 			} else if ( $(window).width() <= 780 ) {
 				$('.sidebar').addClass('hidden responsive');
+				$('.category__showFilters').removeClass('hidden');
 			}
 		}
 	}
